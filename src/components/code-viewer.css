@@ -1,0 +1,8 @@
+.sp-preview-container {
+    @apply flex h-full w-full grow flex-col justify-start;
+  }
+  
+  .sp-preview-iframe {
+    @apply grow;
+  }
+  
