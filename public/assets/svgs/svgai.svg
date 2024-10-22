@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+  <rect width="300" height="100" fill="rgba(255, 255, 255, 0.1)" />
+  <text x="20" y="70" font-family="Arial, sans-serif" font-size="60" fill="#4A90E2">svg</text>
+  <text x="160" y="70" font-family="Arial, sans-serif" font-size="60" fill="#50E3C2">.ai</text>
+  <path d="M70 40 L90 20 L110 40 Z" fill="#4A90E2" />
+  <path d="M110 40 L130 60 L150 40 Z" fill="#50E3C2" />
+  <filter id="f1" x="0" y="0">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+  </filter>
+</svg>

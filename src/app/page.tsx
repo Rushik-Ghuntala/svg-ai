@@ -16,6 +16,8 @@ import { FormEvent, useEffect, useState } from "react";
 import { toast, Toaster } from "sonner";
 import LoadingDots from "@/components/loading-dots";
 import SvgPreview from "@/components/SvgPreview";
+import Image from "next/image";
+import { imageConfig } from "@/constant/imageConfig";
 // import { shareApp } from "./actions";
 
 export default function Home() {
@@ -141,9 +143,12 @@ export default function Home() {
   return (
     <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center py-2">
       <main className="mt-12 flex w-full flex-1 flex-col items-center px-4 text-center sm:mt-20">
-        <h1 className="my-6 max-w-3xl text-4xl font-bold text-gray-800 sm:text-6xl">
-          Svg Generator
-        </h1>
+        <Image
+          src={imageConfig.SVGAI_LOGO}
+          alt="SVG.ai logo"
+          height={200}
+          width={200}
+        />
 
         <form className="w-full max-w-xl" onSubmit={createApp}>
           <fieldset disabled={loading} className="disabled:opacity-75">
